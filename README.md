@@ -41,10 +41,10 @@ Gradle is the only supported build configuration, so just add the dependency to 
 
 ```groovy
 dependencies {
-  implementation 'com.github.easytome:lottie-android:3.4.0-fix-hardware'
+  implementation 'com.github.easytome:lottie-android:$lottieVersion'
 }
 ```
 The latest Lottie version is:
-[![](https://jitpack.io/v/easytome/lottie-android.svg)](https://jitpack.io/#easytome/lottie-android)
+[![lottieVersion](https://jitpack.io/v/easytome/lottie-android.svg)](https://jitpack.io/#easytome/lottie-android)
 
 Lottie 2.8.0 and above only supports projects that have been migrated to [androidx](https://developer.android.com/jetpack/androidx/). For more information, read Google's [migration guide](https://developer.android.com/jetpack/androidx/migrate).
