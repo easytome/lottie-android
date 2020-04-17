@@ -991,7 +991,9 @@ import static com.airbnb.lottie.RenderMode.HARDWARE;
     super.buildDrawingCache(autoScale);
     if (buildDrawingCacheDepth == 1 && getWidth() > 0 && getHeight() > 0 &&
         getLayerType() == LAYER_TYPE_SOFTWARE && getDrawingCache(autoScale) == null) {
-      setRenderMode(HARDWARE);
+      if (Build.VERSION.SDK_INT != Build.VERSION_CODES.N) {
+        setRenderMode(HARDWARE);
+      }
     }
     buildDrawingCacheDepth--;
     L.endSection("buildDrawingCache");
